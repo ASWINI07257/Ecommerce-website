@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Orders</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') no-repeat center center/cover;
+  }
+
+  .overlay {
+    background: rgba(0,0,0,0.6);
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .order-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .order-card {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+  }
+
+  .order-card h3 {
+    margin: 0;
+  }
+
+  .status {
+    color: green;
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background: darkred;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+  <h1>My Orders</h1>
+       <br><br> <br><h2><button onclick="location.href='st.html'",class="btn btn-green"><h3>Back</h3></button>
+
+  <div class="order-container">
+
+    <div class="order-card">
+      <h3>Mobile Phone</h3>
+      <p>Price: ₹15,000</p>
+      <p class="status">Delivered</p>
+      <button onclick="cancelOrder(this)">Cancel Order</button>
+    </div>
+
+    <div class="order-card">
+      <h3>Headphones</h3>
+      <p>Price: ₹2,000</p>
+      <p class="status">Shipped</p>
+      <button onclick="cancelOrder(this)">Cancel Order</button>
+    </div>
+
+    <div class="order-card">
+      <h3>Shoes</h3>
+      <p>Price: ₹3,500</p>
+      <p class="status">Processing</p>
+      <button onclick="cancelOrder(this)">Cancel Order</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function cancelOrder(btn) {
+    btn.parentElement.remove();
+    alert("Order Cancelled");
+  }
+</script>
+
+</body>
+</html>
