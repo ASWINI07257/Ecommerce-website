@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Offers</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* SECTION WITH BACKGROUND */
+.special-offers {
+  background: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da') center/cover no-repeat;
+  padding: 150px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* CONTAINER */
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* CARD */
+.offer-card {
+  background: rgba(0,0,0,0.7);
+  width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.offer-card:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGE */
+.offer-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.offer-card h4 {
+  margin: 10px 0;
+}
+
+.price {
+  color: #00ffcc;
+  font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+       <h2><button onclick="location.href='st.html'",class="btn btn-green"><h3>Back</h3></button>
+
+<section class="special-offers">
+  <h2> Special Offers</h2>
+
+  <div class="offer-container">
+
+    <!-- 1 -->
+    <div class="offer-card">
+      <img src="bag.jpg">
+      <h4>Backpack</h4>
+      <p class="price">₹799 (50% OFF)</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="offer-card">
+      <img src="spo.jpeg">
+      <h4>watch</h4>
+      <p class="price">₹499 (40% OFF)</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="offer-card">
+      <img src="sunglass.jpg">
+      <h4>Sunglasses</h4>
+      <p class="price">₹699 (30% OFF)</p>
+    </div>
+
+    <!-- 4 -->
+    <div class="offer-card">
+      <img src="hand.jpeg">
+      <h4>Handbag</h4>
+      <p class="price">₹999 (60% OFF)</p>
+    </div>
+
+    
+
+  </div>
+</section>
+
+</body>
+</html>
