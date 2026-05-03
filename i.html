@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - ShopEase</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Background */
+.hero {
+  background: url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d') no-repeat center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero h1 {
+  background: rgba(0,0,0,0.6);
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+/* Section */
+.container {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Contact Form */
+.form-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e60000;
+}
+
+/* Contact Info */
+.info-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.info-box h2 {
+  margin-bottom: 20px;
+}
+
+.info {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Map */
+.map {
+  margin-top: 30px;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Top Banner -->         <br><br> <br><h2><button onclick="location.href='st.html'",class="btn btn-green"><h3>Back</h3></button>
+
+<div class="hero">
+  <h1>Contact Us</h1>
+
+</div>
+
+<!-- Main Section -->
+<div class="container">
+
+  <!-- Form -->
+  <div class="form-box">
+    <h2>Send Message</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Order ID (optional)">
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="info-box">
+    <h2>Get in Touch</h2>
+    <div class="info">📍 Address: 123 Main Street, Chennai, India</div>
+    <div class="info">📞 Phone: +91 98765 43210</div>
+    <div class="info">📧 Email: support@shopease.com</div>
+
+    <!-- Map -->
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  © 2026 ShopEase | All Rights Reserved
+</div>
+
+</body>
+</html>
