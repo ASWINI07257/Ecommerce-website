@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add to Cart - 4 Products</title>
+  <link rel="html" href="st.html">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-image: url("https://images.unsplash.com/photo-1523275335684-37898b6baf30");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.6);
+      min-height: 100vh;
+      padding: 20px;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cart {
+      background: orange;
+      padding: 10px 15px;
+      border-radius: 20px;
+    }
+
+    .products {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background: white;
+      color: black;
+      width: 200px;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      background: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: darkgreen;
+    }
+    .btn-green {
+      background-color: green;
+      color: white;
+      margin: 5px;
+    }
+
+    .btn-green:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+  <!-- Header -->
+  <div class="header">
+    <h2>My Shop</h2>
+   <br><br> <br><h2><button onclick="location.href='st.html'",class="btn btn-green"><h3>Back</h3></button>
+
+    <div class="cart">Cart: <span id="cartCount">0</span></div>
+  </div>
+
+  <!-- Products -->
+  <div class="products">
+
+    <div class="product">
+      <img src="sm.jpeg">
+      <h3>Watch</h3>
+      <p>₹1999</p>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="shoe.jpeg">
+      <h3>Shoes</h3>
+      <p>₹2999</p>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="head.jpeg">
+      <h3>Headphones</h3>
+      <p>₹1499</p>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="new.jpeg">
+      <h3>Perfume</h3>
+      <p>₹999</p>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  let count = 0;
+
+  function addToCart() {
+    count++;
+    document.getElementById("cartCount").innerText = count;
+  }
+</script>
+
+</body>
+</html>
